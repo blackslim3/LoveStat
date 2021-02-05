@@ -1,0 +1,96 @@
+@import "../scss/bootstrap/scss/functions";
+@import "../scss/bootstrap/scss/variables";
+@import "../scss/bootstrap/scss/mixins";
+@import "../scss/bootstrap/scss/containers";
+@import "../scss/bootstrap/scss/modal";
+@import "../scss/bootstrap/scss/utilities";
+@import "../scss/bootstrap/scss/utilities/api";
+@import "../scss/bootstrap/scss/images";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap');
+
+$font-stack: 'Big Shoulders Stencil Text', cursive;
+
+$primary-color:#140222;
+$secondary-color: white;
+
+$flicker-shadow: 0px 0px 20px 1px rgba(16,134,232,0.73);
+
+$shadow-primary:  0 0 0.6rem #ffe6ff, 0 0 1.5rem #2E86C1 ,
+-0.2rem 0.1rem 1rem #2E86C1 , 0.2rem 0.1rem 1rem #2E86C1 ,
+0 -0.5rem 1.5rem #2874A6, 0 0.5rem 2rem #2874A6; 
+
+$shadow-secondary: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+-0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+0 -0.5rem 1.5rem #ff2483, 0 0.5rem 2rem #ff2483; 
+
+@import "layout";
+@import "variables";
+@import "modal";
+@import "footer";
+@import "disclaimer";
+@import "privacy";
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: $font-stack;
+    background-color: $primary-color;
+    color: $secondary-color;
+    margin: 0 auto;
+}
+
+button{
+    color: $secondary-color;
+    font-family: $font-stack;
+    text-shadow:  $shadow-primary;
+    border: hidden;
+    cursor: pointer;
+}
+
+li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: $secondary-color;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+hr{
+    height: 1px;
+    border-width: 0;
+    color:#737373;
+    background-color:#737373;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    clear: both;
+    position: relative;
+    margin-top: -200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+.center{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    text-shadow: $shadow-secondary;
+    font-size: 2rem;
+    margin: 10px;
+    padding: 13px;
+    border:2px solid #1086e8;
+    animation: border-flicker 2s linear infinite;
+}
+
+header {
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn{
+        background-color: $primary-color;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    span{
+        font-size: 1.5rem;
+    }
+}
+
+#learnMoreModal{
+    background-color: rgba(0,0,0,0.7);
+}
+
+#instruction{
+    display: inline-block;
+    border: 2px groove;
+    color: #f0cbe0;
+    box-shadow: $shadow-secondary;
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.75;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+#arrow{
+    margin: 1.5rem 0;
+    animation: blinker 1.5s infinite;
+}
+
+@keyframes border-flicker {
+    0% {
+      opacity:0.1;
+      -webkit-box-shadow: $flicker-shadow;
+  -moz-box-shadow: $flicker-shadow;
+  box-shadow: $flicker-shadow;
+    }
+    2% {
+      opacity:1;
+      -webkit-box-shadow: $flicker-shadow;
+  -moz-box-shadow: $flicker-shadow;
+  box-shadow: $flicker-shadow;
+    }
+    4% {
+      opacity:0.1;
+      -webkit-box-shadow: $flicker-shadow;
+  -moz-box-shadow:$flicker-shadow;
+  box-shadow: $flicker-shadow;
+    }
+    
+    8% {
+      opacity:1;
+      -webkit-box-shadow: $flicker-shadow;
+  -moz-box-shadow: $flicker-shadow;
+  box-shadow: $flicker-shadow;
+    }
+    70% {
+      opacity:0.7;
+      -webkit-box-shadow: $flicker-shadow;
+  -moz-box-shadow: $flicker-shadow;
+  box-shadow: $flicker-shadow;
+    }
+    100% {
+      opacity:1;
+      -webkit-box-shadow: $flicker-shadow;
+  -moz-box-shadow: $flicker-shadow;
+  box-shadow:$flicker-shadow;
+    }
+  }
